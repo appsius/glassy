@@ -5,7 +5,7 @@
 }
 
 h1 {
-	color: #ff1c55;
+	color: #00666d;
 	font-weight: 600;
 	font-size: 3rem;
 	opacity: 0.8;
@@ -13,13 +13,13 @@ h1 {
 
 h2,
 p {
-	color: #ff4a62;
+	color: #09868f;
 	font-weight: 500;
 	opacity: 0.8;
 }
 
 h3 {
-	color: #df4d65;
+	color: #17a5af;
 	font-weight: 600;
 	opacity: 0.8;
 }
@@ -115,16 +115,17 @@ main {
 
 .circle1 {
 	top: 5%;
-	right: 15%;
+	right: 13%;
 }
 
 .circle2 {
 	bottom: 5%;
-	left: 10%;
+	left: 13%;
 }
 
 .user img {
 	height: 10vh;
+	border-radius: 50%;
 }
 
 .link img {
@@ -137,9 +138,75 @@ main {
 	object-fit: cover;
 	height: 15rem;
 	width: 12rem;
+	border-radius: 1.5rem;
 }
 
 /* GAMES */
 .status {
 	margin-bottom: 3rem;
+}
+.status input {
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+	border: none;
+	width: 50%;
+	padding: 0.5rem;
+	border-radius: 1.5rem;
+}
+
+.games {
+	margin: 5rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+
+.card {
+	display: flex;
+	background: linear-gradient(
+		to left top,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.5)
+	);
+	border-radius: 1.5rem;
+	margin: 2rem 0;
+	padding: 2rem;
+	box-shadow: 6px 6px 20px rgba(212, 212, 212, 0.212);
+	justify-content: space-between;
+}
+
+.progress {
+	background: linear-gradient(to right top, #00dbb3, #00d8b4);
+	width: 100%;
+	height: 12%;
+	border-radius: 10em;
+	position: relative;
+	overflow: hidden;
+}
+
+.progress::after {
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: rgb(236, 236, 236);
+	position: absolute;
+	left: 60%;
+}
+
+.card-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.percentage {
+	font-weight: bold;
+	font-size: 2.25rem;
+	background: linear-gradient(to right top, #00dbb3, #00d8b4);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
 }
