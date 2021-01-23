@@ -1,0 +1,145 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+h1 {
+	color: #ff1c55;
+	font-weight: 600;
+	font-size: 3rem;
+	opacity: 0.8;
+}
+
+h2,
+p {
+	color: #ff4a62;
+	font-weight: 500;
+	opacity: 0.8;
+}
+
+h3 {
+	color: #df4d65;
+	font-weight: 600;
+	opacity: 0.8;
+}
+
+main {
+	font-family: 'Poppins', sans-serif;
+	min-height: 100vh;
+	background: linear-gradient(to right top, #00dbb3, #00d8b4);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.glass {
+	background: white;
+	min-height: 80vh;
+	width: 60%;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.7),
+		rgba(255, 255, 255, 0.3)
+	);
+	border-radius: 2rem;
+	z-index: 3;
+	backdrop-filter: blur(2rem);
+	display: flex;
+}
+
+.dashboard {
+	flex: 1;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	text-align: center;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3)
+	);
+	border-radius: 2rem;
+}
+
+.link {
+	display: flex;
+	margin: 2rem 0;
+	align-items: center;
+}
+
+.link h2 {
+	padding: 0 2rem;
+}
+
+.games {
+	flex: 2;
+}
+
+.pro {
+	background: linear-gradient(to right bottom, #00dbb3, #00d8b4);
+	border-radius: 2rem;
+	color: white;
+	padding: 1rem;
+	position: relative;
+}
+
+.pro h2 {
+	color: white;
+	font-weight: 600;
+}
+
+.pro img {
+	height: 4rem;
+	position: absolute;
+	top: 120%;
+	left: 50%;
+	transform: translate(-50%, -5%);
+}
+
+.circle1,
+.circle2 {
+	background: white;
+	background: linear-gradient(
+		to right bottom,
+		rgba(255, 255, 255, 0.8),
+		rgba(255, 255, 255, 0.3)
+	);
+	height: 20rem;
+	width: 20rem;
+	position: absolute;
+	z-index: 2;
+	border-radius: 50%;
+}
+
+.circle1 {
+	top: 5%;
+	right: 15%;
+}
+
+.circle2 {
+	bottom: 5%;
+	left: 10%;
+}
+
+.user img {
+	height: 10vh;
+}
+
+.link img {
+	height: 3rem;
+	filter: invert(60%) sepia(50%) saturate(5207%) hue-rotate(110deg)
+		brightness(75%) contrast(100%);
+}
+
+.card img {
+	object-fit: cover;
+	height: 15rem;
+	width: 12rem;
+}
+
+/* GAMES */
+.status {
+	margin-bottom: 3rem;
+}
